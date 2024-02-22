@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de precios</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de precios</h1>
+    <label for="precioBase">Precio base:</label>
+    <input type="number" id="precioBase">
+    <br>
+    <label for="meses">Meses:</label>
+    <input type="number" id="meses">
+    <br>
+    <label for="inflacion">Tasa de inflación mensual (%):</label>
+    <input type="number" id="inflacion">
+    <br>
+    <label for="devaluacion">Devaluación del dólar (%):</label>
+    <input type="number" id="devaluacion">
+    <br>
+    <label for="mesActual">Mes actual:</label>
+    <select id="mesActual">
+      <option value="1">Enero</option>
+      <option value="2">Febrero</option>
+      <option value="3">Marzo</option>
+      <option value="4">Abril</option>
+      <option value="5">Mayo</option>
+      <option value="6">Junio</option>
+      <option value="7">Julio</option>
+      <option value="8">Agosto</option>
+      <option value="9">Septiembre</option>
+      <option value="10">Octubre</option>
+      <option value="11">Noviembre</option>
+      <option value="12">Diciembre</option>
+    </select>
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="resetear()">Resetear</button>
+    <div id="resultados"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
